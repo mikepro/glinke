@@ -9,4 +9,4 @@ jobs:
           version: 27.2
       - uses: actions/checkout@v2
       - name: Get emacs testing library buttercup
-        run: 'emacs --batch --script ./../../cisetup.el'
+        run: 'emacs --batch --script cisetup.el'
