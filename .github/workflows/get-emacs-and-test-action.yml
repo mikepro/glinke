@@ -1,4 +1,4 @@
-name: test-github-actions
+name: get-emacs-and-test
 on: [push]
 jobs:
   test:
