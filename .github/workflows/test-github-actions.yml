@@ -4,9 +4,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: purcell/setup-emacs@master
         with:
-          node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
+          version: 27.2
+      - uses: actions/checkout@v2
+      - name: Get emacs testing library buttercup
+        run: 'emacs --batch --script ./../../cisetup.el'
