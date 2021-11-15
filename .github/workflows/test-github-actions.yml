@@ -10,3 +10,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Get emacs testing library buttercup
         run: 'emacs --batch --script cisetup.el'
+      - name: Run tests
+        run: 'emacs --batch -f package-initialize -L . -f buttercup-run-discover'

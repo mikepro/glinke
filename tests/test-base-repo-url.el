@@ -1,3 +1,4 @@
+(require 'buttercup)
 (defvar file_path (if load-in-progress load-file-name (buffer-file-name)))
 (defvar dir (file-name-directory file_path))
 (defvar pathToLoad (expand-file-name "./../src/glinke.el" dir))
